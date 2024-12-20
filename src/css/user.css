@@ -1,0 +1,20 @@
+#vendor {
+    height: 100%;
+    padding-right: 50px;
+}
+
+#vendor-btn {
+    display:none;
+    align-items: center;
+    background-color: rgb(0, 171, 179);
+    font-size: larger;
+    position: relative; 
+    top: 20px;
+    border-radius: 10%;
+    height: 50%;
+}
+
+#vendor-btn:hover {
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+}
+

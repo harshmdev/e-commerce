@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/myProducts.css">
+    <script src="../js/myProducts.js" defer></script>
+    <title>E-Commerce</title>
+</head>
+<body>
+    <header>
+        <div id="welcome-text">
+            <p>Hi, <span id="guest"></span></p>
+        </div>
+        <div id="brand-name">
+            <img src="..\images\png\logo_middle.jpg" alt="brand-logo" width="400px" height="40px">
+        </div>
+        <div class="right-items">
+            <div id="home-container">
+                <img src="..\images\png\home.png" alt="wishlist" width="24px" height="24px">
+            </div>
+            <div id="cart">
+                <img src="..\images\png\grocery-store.png" alt="cart" width="24px" height="24px">
+                <p id="cart-counter">0</p>
+            </div>
+            <div id="wishlist">
+                <img src="..\images\png\love.png" alt="wishlist" width="24px" height="24px">
+                <p id="wishlist-counter">0</p>
+            </div>
+            <div id="my-account" class="dropdown">
+                <span ><b>My Account</b></span>
+                <div class="dropdown-content">
+                    <button id="add-products">Add Products</button>
+                    <button id="user-details">Users</button>
+                    <button id="my-products">My Products</button>
+                    <!-- <button id="purchase-history">Purchase History</button> -->
+                    <button id="logout">Logout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div id="grid-container">
+            <div class="grid-item" style="border-radius: 10%;">
+                <div id="addProdImage" onclick="addProductsFunction();">
+                    <img src="../images/png/addProduct.png" alt="Add product" width="50px" height="50px">
+                </div>        
+            </div>
+        </div> 
+    </section>
+    <div id="overlay" class="overlay">
+        <div class="form-card">
+            <form class="form">
+                <fieldset>
+                    <legend> Product Form </legend>
+                    <label for="prodName">Product Name:</label></br>
+                    <input type="text" id="prodName" name="prodName" required></br>
+                    <label for="prodPrice">Price:</label></br>
+                    <input type="text" id="prodPrice" name="prodPrice" required></br>
+                    <label for="imgsrc">Img Link:</label></br>
+                    <input type="text" id="imgsrc" name="imgsrc" required></br>
+                    <label for="category">Category:</label></br>
+                    <select id="category" name="category">
+                        <option value="livingroom">Living Room</option>
+                        <option value="decor">Decor</option>
+                        <option value="furnishing">Furnishing</option>
+                        <option value="tableware">Tableware</option>
+                        <option value="bath">Bath & Laundry</option>
+                    </select></br>
+                    <input type="button" id="add-product" value="Add Product">
+                    <p class="successMessage" style="color: green;"></p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="edit-overlay">
+    </div>
+</body>
+</html>

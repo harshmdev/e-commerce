@@ -1,0 +1,81 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section {
+    border-style: inset;
+    border-width: 10px;
+    width: 80%;
+    align-self: center;
+    max-height: 400px;
+    overflow: auto;;
+}
+
+table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+}
+
+
+thead tr th {
+    position: sticky;
+    top:0px;
+    background-color: beige;
+    border: 1px solid gray;
+}
+
+tbody tr td {
+    border: 1px solid lightgrey;
+}
+
+tbody button {
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    border: 0px;
+    margin: 0%;
+    padding: 0%;
+}
+
+tbody button:hover {
+    background-color: rgb(200,200,200);
+}
+
+#products-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+
+#vendor-products {
+    width: 50%;
+    height: 400px;
+    border: 1px solid black;
+    overflow: auto; 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.product-item {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+}
+
+.prodName {
+    width:50%;
+}
+
+.product-item div {
+    border-right: 1px solid lightgrey;
+}

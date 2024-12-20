@@ -1,0 +1,11 @@
+.removeProd {
+    width: 50%;
+}
+
+#add-products , #user-details {
+    display: block;
+}
+
+#my-products {
+    display: none;
+}
